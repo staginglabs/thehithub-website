@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {poppins} from '@/fonts/fonts';
+import {bodyStyle, poppins} from '@/fonts/fonts';
 import { Navbar } from "@/components";
 
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`  ${poppins.className} antialiased`}
+        className={`  ${poppins.className} ${bodyStyle}`}
       >
       
         <Navbar />

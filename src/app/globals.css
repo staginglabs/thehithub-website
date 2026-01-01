@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0F351D;
 }
 
 @theme inline {
@@ -12,12 +12,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #0F351D;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -30,6 +30,11 @@ body {
 
 @layer base {
   h1 {
-    @apply  text-[#ff0000] text-7xl;
+    @apply  text-[95px] leading-25 text-[#0F351D] text-center font-bold;
   }
 }
+
+
+
+
+
