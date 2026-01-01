@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { primary_button } from "@/fonts/fonts";
 
 /* SVG Icons */
 const MenuIcon = () => (
@@ -61,8 +62,8 @@ export function Navbar() {
                     href={link.href}
                     className={`transition ${
                       pathname === link.href
-                        ? "text-[#F8E108]"
-                        : "text-gray-700 hover:text-[#F8E108]"
+                        ? "text-[#18A34B]"
+                        : "text-[#000000] hover:text-[#18A34B]"
                     }`}
                   >
                     {link.name}
@@ -76,7 +77,7 @@ export function Navbar() {
           <div className="flex w-[80%] items-center justify-end gap-3 lg:w-[20%]">
             <Link
               href="/contact"
-              className="hidden rounded-full bg-[#18A34B] px-3 py-2.5 text-white text-[16px] font-medium hover:bg-green-700 lg:flex gap-2"
+              className={`hidden lg:flex ${primary_button} py-2.5! h-11! pl-4! pr-4!`}
             >
               Contact Us
               <Image
@@ -124,8 +125,8 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
                 className={
                   pathname === link.href
-                    ? "text-[#F8E108]"
-                    : "text-gray-700"
+                    ? "text-[#18A34B]"
+                    : "text-[#000000]"
                 }
               >
                 {link.name}
@@ -138,7 +139,7 @@ export function Navbar() {
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="flex w-full justify-between rounded-full bg-[#18A34B] px-3 py-2.5 text-white text-[16px] font-medium hover:bg-green-700 lg:flex gap-2"
+            className={`inline-flex ${primary_button}`}
           >
             Contact Us
               <Image
