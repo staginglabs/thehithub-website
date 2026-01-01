@@ -60,4 +60,19 @@ body {
   .banner-list {
     order: 1;
   }
+
+.banner-list{
+justify-content: center !important;
+margin-top: 50px !important;
+
+}
+
+.banner-list ul{
+display: flex;
+gap:30px;
+}
+
+.banner-list ul li:last-child{
+margin-top: -17px !important;
+}
 }
