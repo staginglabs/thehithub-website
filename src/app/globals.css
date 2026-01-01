@@ -30,7 +30,11 @@ body {
 
 @layer base {
   h1 {
-    @apply  text-[95px] leading-25 text-[#0F351D] text-center font-bold;
+    @apply  w-full sm:max-w-179.75  text-[40px] sm:text-[95px] leading-14 sm:leading-25 text-[#0F351D] text-center font-bold ;
+  }
+
+  h2 {
+    @apply text-[40px] leading-13.75 font-bold;
   }
 }
 
@@ -38,3 +42,22 @@ body {
 
 
 
+
+@media (max-width: 1080px) {
+  .banner-plyer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-text {
+    order: 3;
+  }
+
+  .banner-image {
+    order: 2;
+  }
+
+  .banner-list {
+    order: 1;
+  }
+}

@@ -1,25 +1,40 @@
+import Banner from "@/components/Screens/HomePage/banner";
 import Image from "next/image";
 
 
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
+    <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat">
+      <main className="flex  w-full max-w-292.5 flex-col items-center justify-between py-32 px-3.75   dark:bg-black sm:items-start ">
+        {/* <Image
           className="dark:invert"
           src="/next.svg"
           alt="Next.js logo"
           width={100}
           height={20}
           priority
-        />
+        /> */}
         {/* <Navbar /> */}
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left ">
+
+
+  {/* banner start  */}
+
+<Banner/>
+
+
+
+
+
+  {/* banner end  */}
+
+
+
+        {/* <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left ">
           <h1 className="max-w-xs text-3xl tv:[#383838] font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             To get started, edit the page.tsx file!
           </h1>
-
+<h2 className="">Javed </h2>
 
      <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400 ">
             Looking for a starting point or more instructions? Head over to{" "}
@@ -63,7 +78,7 @@ export default function Home() {
           >
             Documentation
           </a>
-        </div>
+        </div> */}
       </main>
     </div>
   );
