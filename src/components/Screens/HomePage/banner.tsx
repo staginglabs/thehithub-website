@@ -72,7 +72,7 @@ const Banner = () => {
           <ul className="space-y-5">
             {bannerListItems.map((item, index) => {
               return (
-                <li className={banner_list_text}>
+                <li className={banner_list_text} key={index}>
                   <Image
                     src={item.bannerListImage}
                     width={30}

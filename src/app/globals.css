@@ -43,7 +43,7 @@ body {
 
 
 
-@media (max-width: 1080px) {
+/* @media (max-width: 1024px) {
   .banner-plyer {
     display: flex;
     flex-direction: column;
@@ -75,4 +75,4 @@ gap:30px;
 .banner-list ul li:last-child{
 margin-top: -17px !important;
 }
-}
+} */
