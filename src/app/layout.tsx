@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {bodyStyle, poppins} from '@/fonts/fonts';
+import { bodyStyle, poppins } from "@/fonts/fonts";
 import { Navbar } from "@/components";
 import Footer from "@/components/Footer/Footer";
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`  ${poppins.className} ${bodyStyle}`}
-      >
-      
+      <body className={`  ${poppins.className} ${bodyStyle}`}>
         <Navbar />
 
         {children}
@@ -30,3 +25,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+//  ${bodyStyle}

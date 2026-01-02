@@ -34,17 +34,20 @@ const Banner = () => {
   return (
     <>
       <div className="mx-auto">
-        <h1 className="">Every Shot Has A Story</h1>
+        <h1>Every Shot Has A Story</h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 banner-plyer ">
+      <div className="flex flex-col lg:grid grid-cols-1 md:grid-cols-3  sm:gap-y-14 md:gap-10 banner-plyer pb-17.5 mt-20 lg:pb-55.5 lg:mt-0 ">
         {/* Left Content */}
-        <div className="text-center md:text-left banner-text ">
-          <p className=" ">
+        <div className="banner-text flex flex-col  items-center lg:items-baseline  order-3 lg:order-1 text-center md:text-left  mt-42 sm:mt-37.5 md:mt-21.25 lg:mt-0  ">
+          <p className=" sm:max-w-[63%] text-center lg:text-left lg:max-w-full">
             A premium turf space designed for high-energy play and unforgettable
             moments.
           </p>
-          <Link href="/" className={`${secondary_button} w-max mt-10`}>
+          <Link
+            href="/"
+            className={`${secondary_button} w-max mt-6.25 lg:mt-10`}
+          >
             Contact Us
             <Image
               src="/media/p-btn-arrow.svg"
@@ -56,20 +59,20 @@ const Banner = () => {
         </div>
 
         {/* Center Image */}
-        <div className="relative w-full h-75 md:h-105 flex justify-center -mt-22 ml-1.5 banner-image">
+        <div className="banner-image relative w-full h-75 md:h-105 flex justify-center -mt-22.5  lg:ml-1.5  order-2">
           <Image
             src="/media/plyers.png"
             alt="Players"
             width={975}
             height={600}
-            className="object-contain max-w-200 h-143.25"
+            className="object-contain md:max-w-175 lg:max-w-200 h-143.25"
             priority
           />
         </div>
 
         {/* Right List */}
-        <div className="flex  md:justify-end banner-list">
-          <ul className="space-y-5">
+        <div className="flex justify-center  lg:justify-end banner-list order-1 lg:order-3 ">
+          <ul className="space-y-5 flex flex-wrap justify-center lg:block space-x-5 lg:space-x-0">
             {bannerListItems.map((item, index) => {
               return (
                 <li className={banner_list_text} key={index}>
