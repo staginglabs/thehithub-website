@@ -1,4 +1,5 @@
 import Banner from "@/components/Screens/HomePage/banner";
+import Area from "@/components/Screens/HomePage/turf-area";
 import Image from "next/image";
 
 
@@ -18,16 +19,18 @@ export default function Home() {
         {/* <Navbar /> */}
 
 
-  {/* banner start  */}
+{/* banner start  */}
 
 <Banner/>
 
+{/* banner end  */}
 
 
+{/* Turf Arena Start  */}
 
+<Area/>
 
-  {/* banner end  */}
-
+{/* Turf Arena End  */}
 
 
         {/* <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left ">

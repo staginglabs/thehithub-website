@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {bodyStyle, poppins} from '@/fonts/fonts';
+import { bodyStyle, poppins } from '@/fonts/fonts';
 import { Navbar } from "@/components";
 import Footer from "@/components/Footer/Footer";
 
@@ -21,9 +21,8 @@ export default function RootLayout({
       <body
         className={`  ${poppins.className} ${bodyStyle}`}
       >
-      
-        <Navbar />
 
+        <Navbar />
         {children}
         <Footer />
       </body>

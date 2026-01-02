@@ -38,7 +38,7 @@ export function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className="w-full px-3.75 py-1.25">
+      <nav className="w-full px-3.75 py-1.25 fixed">
         <div className="mx-auto flex max-w-347.5 items-center">
           {/* Logo*/}
           <div className="w-[20%]">

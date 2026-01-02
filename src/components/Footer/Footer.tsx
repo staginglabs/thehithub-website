@@ -9,25 +9,25 @@ const Footer = () => {
             {/* TOP CTA SECTION */}
             <section
                 className="
-            relative
-            pt-50
-            pb-82.5
-            bg-[url('/media/ready-to-play.jpg')]
-            bg-cover
-            bg-center
-            bg-no-repeat
+                    relative
+                    pt-50
+                    pb-82.5
+                    bg-[url('/media/ready-to-play.jpg')]
+                    bg-cover
+                    bg-center
+                    bg-no-repeat
 
-            before:content-['']
-            before:absolute
-            before:left-0
-            before:bottom-0
-            before:w-full
-            before:h-60
-            before:bg-[url('/media/ready-to-play-buttom.svg')]
-            before:bg-no-repeat
-            before:bg-bottom
-            before:bg-cover
-        "
+                    before:content-['']
+                    before:absolute
+                    before:left-0
+                    before:bottom-0
+                    before:w-full
+                    before:h-60
+                    before:bg-[url('/media/ready-to-play-buttom.svg')]
+                    before:bg-no-repeat
+                    before:bg-bottom
+                    before:bg-cover
+                "
             >
                 <div className="relative z-10 max-w-7xl mx-auto text-center">
                     <h2>Ready to Play Book Your Turf Now!</h2>
@@ -55,7 +55,7 @@ const Footer = () => {
                             className="font-semibold text-[16px] underline flex gap-4 items-center text-[#0F351D]"
                         >
                             See The Turf
-                             <Image
+                            <Image
                                 src="/media/play-icon.svg"
                                 alt="Turf"
                                 width={50}
@@ -100,7 +100,7 @@ const Footer = () => {
                         <div className="text-center px-11.25 border-l border-r border-[#FFFFFF8F]">
                             <Image className="mx-auto mb-5" src="/media/call-icon.svg" alt="Location" width={24} height={24} />
                             <span className="font-bold text-[16px]">REACH OUT</span>
-                           <p className="text-[#ffffff] mt-2.5">
+                            <p className="text-[#ffffff] mt-2.5">
                                 <a href="tel:9893459995" className="block hover:text-[#99CA3C]">
                                     (+91) 98934 59 995
                                 </a>
@@ -111,27 +111,27 @@ const Footer = () => {
                             {/* Social Media Icons */}
                             <div className="mt-5 flex items-center justify-center gap-3">
                                 <a href="#" aria-label="Facebook" className="social-icon w-7.5 h-7.5 p-2 bg-[#FFFFFF29] hover:bg-[#99CA3C] flex justify-center align-middle rounded-full">
-                                <Image src="/media/facebook.svg" alt="Facebook" width={16} height={16} />
+                                    <Image src="/media/facebook.svg" alt="Facebook" width={16} height={16} />
                                 </a>
 
                                 <a href="#" aria-label="Instagram" className="social-icon w-7.5 h-7.5 p-2 bg-[#FFFFFF29] hover:bg-[#99CA3C] flex justify-center align-middle rounded-full">
-                                <Image src="/media/instagram.svg" alt="Instagram" width={16} height={16} />
+                                    <Image src="/media/instagram.svg" alt="Instagram" width={16} height={16} />
                                 </a>
 
                                 <a href="#" aria-label="YouTube" className="social-icon w-7.5 h-7.5 p-2 bg-[#FFFFFF29] hover:bg-[#99CA3C] flex justify-center align-middle rounded-full">
-                                <Image src="/media/youtube.svg" alt="YouTube" width={16} height={16} />
+                                    <Image src="/media/youtube.svg" alt="YouTube" width={16} height={16} />
                                 </a>
 
                                 <a href="#" aria-label="Snapchat" className="social-icon w-7.5 h-7.5 p-2 bg-[#FFFFFF29] hover:bg-[#99CA3C] flex justify-center align-middle rounded-full">
-                                <Image src="/media/snapchat.svg" alt="Snapchat" width={16} height={16} />
+                                    <Image src="/media/snapchat.svg" alt="Snapchat" width={16} height={16} />
                                 </a>
 
                                 <a href="#" aria-label="LinkedIn" className="social-icon w-7.5 h-7.5 p-2 bg-[#FFFFFF29] hover:bg-[#99CA3C] flex justify-center align-middle rounded-full">
-                                <Image src="/media/linkedin.svg" alt="LinkedIn" width={16} height={16} />
+                                    <Image src="/media/linkedin.svg" alt="LinkedIn" width={16} height={16} />
                                 </a>
 
                                 <a href="#" aria-label="X" className="social-icon w-7.5 h-7.5 p-2 bg-[#FFFFFF29] hover:bg-[#99CA3C] flex justify-center align-middle rounded-full">
-                                <Image src="/media/x.svg" alt="X" width={16} height={16} />
+                                    <Image src="/media/x.svg" alt="X" width={16} height={16} />
                                 </a>
                             </div>
                         </div>
