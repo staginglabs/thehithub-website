@@ -37,7 +37,7 @@ const Banner = () => {
         <h1>Every Shot Has A Story</h1>
       </div>
 
-      <div className="flex flex-col lg:grid grid-cols-1 md:grid-cols-3  sm:gap-y-14 md:gap-10 banner-plyer pb-17.5 mt-20 lg:pb-55.5 lg:mt-0 ">
+      <div className="flex flex-col lg:grid grid-cols-1 md:grid-cols-3  sm:gap-y-14 md:gap-10 banner-plyer pb-17.5 mt-10 lg:pb-55.5 lg:mt-0 ">
         {/* Left Content */}
         <div className="banner-text flex flex-col  items-center lg:items-baseline  order-3 lg:order-1 text-center md:text-left  mt-42 sm:mt-37.5 md:mt-21.25 lg:mt-0  ">
           <p className=" sm:max-w-[63%] text-center lg:text-left lg:max-w-full">

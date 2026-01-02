@@ -29,7 +29,7 @@ body {
 
 @layer base {
   h1 {
-    @apply  w-full sm:max-w-179.75  text-[40px] lg:text-[95px] leading-14 sm:leading-25 text-[#0F351D] text-center font-bold ;
+    @apply  w-full sm:max-w-179.75 text-4xl  md:text-[60px] lg:text-[95px] leading-14 sm:leading-25 text-[#0F351D] text-center font-bold ;
   }
 
   h2 {

@@ -7,7 +7,7 @@ const HomeWelcomeSection = () => {
   return (
     <>
       <div className="home-welcome">
-        <div className="flex flex-col items-center gap-y-8.75 md:gap-y-0 md:items-baseline md:grid grid-cols-[297px_1fr] gap-x-15 lg:gap-x-18.75">
+        <div className="flex flex-col items-center gap-y-8.75 md:gap-y-0 md:items-baseline md:grid grid-cols-[297px_1fr] gap-x-15 lg:gap-x-18.75 pb-14.5 lg:pb-30">
           <div>
             <p className="welcome-heading font-bold text-center md:text-left">
               Welcome To The Hit Hub
