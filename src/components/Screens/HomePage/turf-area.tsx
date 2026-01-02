@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "motion/react"
-import "./home.css"
+import { motion, scale } from "motion/react";
+import "./home.css";
 
 const cards = [
   {
@@ -39,7 +39,7 @@ const cards = [
     image: "/media/kabaddi.png",
     color: "#9ACA3C",
   },
-]
+];
 
 function Area() {
   return (
@@ -48,19 +48,21 @@ function Area() {
       style={{ "--cards": cards.length } as React.CSSProperties}
     >
       {cards.map((card, i) => {
-        const topOffset = 150 + i * 80
+        const topOffset = 150 + i * 80;
 
         return (
           <motion.div
             key={i}
             className="stack-card"
-            style={{
-              background: card.color,
-              zIndex: i + 1,
-              top: topOffset,
-            } as React.CSSProperties}
-            initial={{opacity: 0.9 }}
-            whileInView={{opacity: 1 }}
+            style={
+              {
+                background: card.color,
+                zIndex: i + 1,
+                top: topOffset,
+              } as React.CSSProperties
+            }
+            initial={{ opacity: 0.9 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ amount: 0.6 }}
             transition={{ type: "spring", stiffness: 120, damping: 30 }}
           >
@@ -81,11 +83,10 @@ function Area() {
               </div>
             </div>
           </motion.div>
-
-        )
+        );
       })}
     </section>
-  )
+  );
 }
 
 export default Area;
