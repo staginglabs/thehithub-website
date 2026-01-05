@@ -8,10 +8,24 @@ export const metadata: Metadata = {
 
 export default function Rules() {
   return (
-    <div className="flex  items-center justify-center  dark:bg-black bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat">
-      <main className="flex  w-full max-w-292.5 flex-col items-center justify-between py-32 px-3.75   dark:bg-black">
-        <Rulebanner />
-      </main>
+    <div className="flex flex-col w-full dark:bg-black">
+      {/* banner section */}
+      <section
+        className="w-full 
+    bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat"
+      >
+        <div className="mx-auto flex flex-col w-full max-w-292.5 pt-32 px-3.75">
+          <Rulebanner />
+        </div>
+      </section>
+
+      {/* Other sections  */}
+
+      <section className="w-full bg-linear-to-b from-[#F9EBDA] to-[#F9EBDA00]">
+        <div className="mx-auto px-3.75 flex w-full max-w-292.5 flex-col">
+          <Rules />
+        </div>
+      </section>
     </div>
   );
 }
