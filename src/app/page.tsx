@@ -1,45 +1,31 @@
 import Banner from "@/components/Screens/HomePage/banner";
-import TurfArea from "@/components/Screens/HomePage/TurfArea";
 import HomeWelcomeSection from "@/components/Screens/HomePage/HomeWelcomeSection";
 import InstagramSection from "@/components/Screens/HomePage/InstagramSection";
+import TurfArea from "@/components/Screens/HomePage/TurfArea";
 
 export default function Home() {
   return (
     <>
-      {/* <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <main className="flex  w-full max-w-292.5 flex-col items-center justify-between py-32 px-3.75   dark:bg-black sm:items-start ">
-          <Banner />
-          <HomeWelcomeSection />
-          <InstagramSection />
-          <Cards />
-        </main>
-      </div>
-
-      <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
-        <main className="flex  w-full max-w-292.5 flex-col items-center justify-between py-32 px-3.75   dark:bg-black sm:items-start ">
-          <InstagramSection />
-          <Cards />
-          
-        </main>
-      </div> */}
-
-      {/* HERO / WELCOME SECTION */}
-      <section className="bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="flex min-h-screen items-center justify-center font-sans">
-          <main className="flex w-full max-w-292.5 flex-col items-center py-32 px-3.75 sm:items-start">
+      <div className="flex flex-col w-full dark:bg-black">
+        {/* banner section */}
+        <section
+          className="w-full 
+    bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat"
+        >
+          <div className="mx-auto flex flex-col w-full max-w-292.5 pt-32 px-3.75">
             <Banner />
-            <HomeWelcomeSection />
-          </main>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      {/* NORMAL SECTIONS (NO BG IMAGE) */}
-      <section className="flex bg-linear-to-b from-white/50 to-[#F9EBDA] items-center justify-center font-sans">
-        <main className="flex w-full max-w-292.5 flex-col items-center py-32 px-3.75 sm:items-start">
-          <InstagramSection />
-          <TurfArea />
-        </main>
-      </section>
+        {/* Other sections  */}
+        <section className="w-full bg-linear-to-b from-[#F9EBDA] to-[#FFFFFF]">
+          <div className="mx-auto px-3.75 flex w-full max-w-292.5 flex-col">
+            <HomeWelcomeSection />
+            <InstagramSection />
+            <TurfArea />
+          </div>
+        </section>
+      </div>
     </>
   );
 }
