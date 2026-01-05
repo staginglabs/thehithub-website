@@ -1,0 +1,67 @@
+.stack-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: calc((565px + 120px) * var(--cards));
+}
+
+.stack-card {
+  position: sticky;
+  top: 150px;
+  height: 565px;
+  margin: 0 auto;
+  border-radius: 12px;
+  padding: 0 50px 0 0 ;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-header h3 {
+    letter-spacing: 0;
+    text-align: center;
+    color: #0f351d;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 45px;
+    position: absolute;
+    top: 35px;
+    left: 120px;
+    right: 0;
+    width: max-content;
+    margin: 0 auto;
+}
+.card-header span {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #0F351D;
+    opacity: .2;
+    position: absolute;
+    top: 40px;
+    right: 85px;
+}
+/* BODY */
+.card-body {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card-text {
+ max-width: 470px;
+ display: flex;
+ align-items: end;
+ padding-bottom: 120px;
+}
