@@ -22,7 +22,7 @@ export default function Rules() {
 
       {/* Other sections  */}
       <section className="w-full bg-linear-to-b from-[#F9EBDA] to-[#FFFFFF]">
-        <div className="mx-auto px-3.75 flex w-full max-w-292.5 flex-col bg-red-500 border-2 border-[#FFFFFF]">
+        <div className="mx-auto px-3.75 flex w-full max-w-292.5 flex-col  border-2 border-[#FFFFFF]">
           <GameRules />
         </div>
       </section>
