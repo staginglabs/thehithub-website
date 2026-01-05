@@ -43,19 +43,19 @@ const cards = [
 ]
 
 function TurfArea() {
-  const wrapperRef = useRef<HTMLDivElement>(null)
+  const sectionRef = useRef<HTMLDivElement>(null)
 
   const { scrollYProgress } = useScroll({
-    target: wrapperRef,
+    target: sectionRef,
     offset: ["start start", "end end"],
   })
 
   return (
-    <div className="turf-wrapper">
-      <h2 className="text-center max-w-130 mx-auto mb-10">Shajapur’s Premier Multi-Sport Turf Arena</h2>
+    <div className="turf-section">
+     <h2 className="text-center max-w-130 mx-auto mb-10">Shajapur's Premier Multi-Sport Turf Arena</h2>
 
       <div
-        ref={wrapperRef}
+        ref={sectionRef}
         className="stack-wrapper"
         style={{ "--cards": cards.length } as React.CSSProperties}
       >
@@ -85,7 +85,7 @@ function TurfArea() {
                 background: card.color,
                 top: topOffset,
                 width,
-                zIndex: cards.length - i,
+                zIndex: i + 1,
               }}
             >
               <div className="card-header">
