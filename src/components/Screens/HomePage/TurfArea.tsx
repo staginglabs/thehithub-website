@@ -43,67 +43,69 @@ const cards = [
 ]
 
 function TurfArea() {
-  const sectionRef = useRef<HTMLDivElement>(null)
+  const wrapperRef = useRef<HTMLDivElement>(null)
 
   const { scrollYProgress } = useScroll({
-    target: sectionRef,
+    target: wrapperRef,
     offset: ["start start", "end end"],
   })
 
   return (
-    <section
-      ref={sectionRef}
-      className="stack-wrapper"
-      style={{ "--cards": cards.length } as React.CSSProperties}
-    >
-      {cards.map((card, i) => {
-        const topOffset = 150 + i * 80
+    <div className="turf-wrapper">
+      <h2 className="text-center max-w-130 mx-auto mb-10">Shajapur’s Premier Multi-Sport Turf Arena</h2>
 
-        const steps = cards.length - i - 1
-        const range: number[] = []
-        const widths: string[] = []
+      <div
+        ref={wrapperRef}
+        className="stack-wrapper"
+        style={{ "--cards": cards.length } as React.CSSProperties}
+      >
+        {cards.map((card, i) => {
+          const topOffset = 150 + i * 80
 
-        for (let s = 1; s <= steps; s++) {
-          range.push((i + s) / cards.length)
-          widths.push(`calc(100% - ${s * 80}px)`)
-        }
+          const steps = cards.length - i - 1
+          const range: number[] = []
+          const widths: string[] = []
 
-        const width = useTransform(
-          scrollYProgress,
-          range.length ? range : [0],
-          widths.length ? widths : ["100%"]
-        )
+          for (let s = 1; s <= steps; s++) {
+            range.push((i + s) / cards.length)
+            widths.push(`calc(100% - ${s * 80}px)`)
+          }
 
-        // const width = useTransform(scrollYProgress, range, widths)
+          const width = useTransform(
+            scrollYProgress,
+            range.length ? range : [0],
+            widths.length ? widths : ["100%"]
+          )
 
-        return (
-          <motion.div
-            key={i}
-            className="stack-card"
-            style={{
-              background: card.color,
-              top: topOffset,
-              width,
-              zIndex: i + 1, 
-            }}
-          >
-            <div className="card-header">
-              <h3>{card.title}</h3>
-              <span>{card.index}</span>
-            </div>
-
-            <div className="card-body">
-              <div className="card-image">
-                <img src={card.image} alt={card.title} />
+          return (
+            <motion.div
+              key={i}
+              className="stack-card"
+              style={{
+                background: card.color,
+                top: topOffset,
+                width,
+                zIndex: cards.length - i,
+              }}
+            >
+              <div className="card-header">
+                <h3>{card.title}</h3>
+                <span>{card.index}</span>
               </div>
-              <div className="card-text">
-                <p>{card.desc}</p>
+
+              <div className="card-body">
+                <div className="card-image">
+                  <img src={card.image} alt={card.title} />
+                </div>
+                <div className="card-text">
+                  <p>{card.desc}</p>
+                </div>
               </div>
-            </div>
-          </motion.div>
-        )
-      })}
-    </section>
+            </motion.div>
+          )
+        })}
+      </div>
+    </div>
   )
 }
 
