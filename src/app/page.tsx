@@ -1,9 +1,7 @@
 import Banner from "@/components/Screens/HomePage/banner";
-import Area from "@/components/Screens/HomePage/turf-area";
+import TurfArea from "@/components/Screens/HomePage/TurfArea";
 import HomeWelcomeSection from "@/components/Screens/HomePage/HomeWelcomeSection";
-import Image from "next/image";
 import InstagramSection from "@/components/Screens/HomePage/InstagramSection";
-import Cards from "@/components/Screens/HomePage/Cards";
 
 export default function Home() {
   return (
@@ -39,7 +37,7 @@ export default function Home() {
       <section className="flex bg-linear-to-b from-white/50 to-[#F9EBDA] items-center justify-center font-sans">
         <main className="flex w-full max-w-292.5 flex-col items-center py-32 px-3.75 sm:items-start">
           <InstagramSection />
-          <Cards />
+          <TurfArea />
         </main>
       </section>
     </>
