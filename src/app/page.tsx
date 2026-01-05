@@ -26,8 +26,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full bg-linear-to-b from-[#F9EBDA] to-[#FFFFFF]">
-          <div className="mx-auto px-3.75 flex w-full max-w-292.5 flex-col">
+        <section className="w-full bg-[#ffffff] py-30">
+          <div className="mx-auto px-3.75 flex w-full max-w-320 flex-col">
             <TurfArea />
           </div>
         </section>

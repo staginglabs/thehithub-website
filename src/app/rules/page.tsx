@@ -1,3 +1,4 @@
+import GameRules from "@/components/Screens/RulesPage/GameRules";
 import Rulebanner from "@/components/Screens/RulesPage/Rulebanner";
 import { Metadata } from "next";
 
@@ -20,10 +21,9 @@ export default function Rules() {
       </section>
 
       {/* Other sections  */}
-
-      <section className="w-full bg-linear-to-b from-[#F9EBDA] to-[#F9EBDA00]">
-        <div className="mx-auto px-3.75 flex w-full max-w-292.5 flex-col">
-          <Rules />
+      <section className="w-full bg-linear-to-b from-[#F9EBDA] to-[#FFFFFF]">
+        <div className="mx-auto px-3.75 flex w-full max-w-292.5 flex-col bg-red-500 border-2 border-[#FFFFFF]">
+          <GameRules />
         </div>
       </section>
     </div>
