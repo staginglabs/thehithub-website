@@ -1,7 +1,7 @@
 "use client"
 
 import { motion, useScroll, useTransform } from "motion/react"
-import { useRef } from "react"
+import { useRef, useState, useEffect } from "react"
 import "./home.css"
 
 const cards = [
@@ -42,8 +42,22 @@ const cards = [
   },
 ]
 
+function useIsMobile(breakpoint = 1024) {
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < breakpoint)
+    check()
+    window.addEventListener("resize", check)
+    return () => window.removeEventListener("resize", check)
+  }, [breakpoint])
+
+  return isMobile
+}
+
 function TurfArea() {
   const sectionRef = useRef<HTMLDivElement>(null)
+  const isMobile = useIsMobile(1024)
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -52,7 +66,9 @@ function TurfArea() {
 
   return (
     <div className="turf-section">
-     <h2 className="text-center max-w-130 mx-auto mb-10">Shajapur's Premier Multi-Sport Turf Arena</h2>
+      <h2 className="text-center max-w-130 mx-auto mb-10">
+        Shajapur's Premier Multi-Sport Turf Arena
+      </h2>
 
       <div
         ref={sectionRef}
@@ -60,7 +76,9 @@ function TurfArea() {
         style={{ "--cards": cards.length } as React.CSSProperties}
       >
         {cards.map((card, i) => {
-          const topOffset = 150 + i * 80
+          /* ONLY responsive change */
+          const topOffset =
+            (isMobile ? 80 : 150) + i * (isMobile ? 40 : 70)
 
           const steps = cards.length - i - 1
           const range: number[] = []
@@ -68,7 +86,10 @@ function TurfArea() {
 
           for (let s = 1; s <= steps; s++) {
             range.push((i + s) / cards.length)
-            widths.push(`calc(100% - ${s * 80}px)`)
+
+            widths.push(
+              `calc(100% - ${s * (isMobile ? 0 : 80)}px)`
+            )
           }
 
           const width = useTransform(
@@ -94,7 +115,7 @@ function TurfArea() {
               </div>
 
               <div className="card-body">
-                <div className="card-image">
+                <div className="card-image flex items-center">
                   <img src={card.image} alt={card.title} />
                 </div>
                 <div className="card-text">

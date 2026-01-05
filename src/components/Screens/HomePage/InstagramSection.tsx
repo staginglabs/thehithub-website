@@ -20,7 +20,7 @@ const InstagramSection = () => {
       </div>
 
       <div className="w-full mt-8.5">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full max-md:flex-col max-md:gap-6">
           <Image
             src={"./media/icons/instagram.svg"}
             width={167}

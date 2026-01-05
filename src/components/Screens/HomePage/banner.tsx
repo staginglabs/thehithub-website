@@ -49,12 +49,12 @@ const Banner = () => {
             className={`${secondary_button} w-max mt-6.25 lg:mt-10`}
           >
             Contact Us
-            <Image
-              src="/media/p-btn-arrow.svg"
-              alt="contact"
-              width={21}
-              height={21}
-            />
+             <Image
+                src="/media/s-button.svg"
+                alt="contact"
+                width={31}
+                height={31}
+              />
           </Link>
         </div>
 
@@ -72,7 +72,7 @@ const Banner = () => {
 
         {/* Right List */}
         <div className="flex justify-center  lg:justify-end banner-list order-1 lg:order-3 ">
-          <ul className="space-y-5 flex flex-wrap justify-center lg:block space-x-5 lg:space-x-0">
+          <ul className="flex flex-wrap justify-center gap-6 flex-col max-lg:flex-row">
             {bannerListItems.map((item, index) => {
               return (
                 <li className={banner_list_text} key={index}>

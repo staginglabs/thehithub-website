@@ -36,10 +36,10 @@ const HomeWelcomeSection = () => {
             >
               Read More
               <Image
-                src="/media/p-btn-arrow.svg"
+                src="/media/s-button.svg"
                 alt="contact"
-                width={21}
-                height={21}
+                width={31}
+                height={31}
               />
             </Link>
           </div>

@@ -12,6 +12,8 @@ const Footer = () => {
                     relative
                     pt-50
                     pb-82.5
+                    max-lg:pt-25
+                    max-lg:pb-40
                     bg-[url('/media/ready-to-play.jpg')]
                     bg-cover
                     bg-center
@@ -23,6 +25,7 @@ const Footer = () => {
                     before:bottom-0
                     before:w-full
                     before:h-60
+                    before:max-lg:h-25
                     before:bg-[url('/media/ready-to-play-buttom.svg')]
                     before:bg-no-repeat
                     before:bg-bottom
@@ -67,7 +70,7 @@ const Footer = () => {
             </section>
 
             {/* BOTTOM INFO SECTION */}
-            <section className="bg-[#24392B] bg-[url('/media/footer-text.svg')] bg-bottom bg-no-repeat text-white px-3.75">
+            <section className="bg-[#24392B] bg-[url('/media/footer-text.svg')] bg-auto lg:bg-contain xl:bg-auto bg-bottom bg-no-repeat text-white px-3.75">
                 <div className="max-w-292.5 mx-auto pt-14">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-6">
                         <div className="flex items-center gap-4">
@@ -76,11 +79,11 @@ const Footer = () => {
 
                         <div className="">
                             <p className="text-lg ">
-                                Shajapur’s First Multi-Sport Turf Arena
+                                Shajapur's First Multi-Sport Turf Arena
                             </p>
                             <Link
                                 href="#"
-                                className="text-[#99CA3C] hover:text-[#ffffff] text-[24px] underline font-semibold italic flex items-center gap-3"
+                                className="text-[#99CA3C] hover:text-[#ffffff] text-[24px] underline font-semibold italic flex items-center md:justify-center gap-3"
                             >
                                 VISIT OUR LOCATION
                                 <Image src="/media/s-button.svg" alt="Location" width={25} height={25} />
@@ -88,8 +91,8 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="mt-12 grid grid-cols-1  md:grid-cols-[34%_28%_38%] py-21.25 rounded-xl bg-[url('/media/footer-image.jpg')] bg-cover bg-center bg-no-repeat">
-                        <div className="text-center px-11.25">
+                    <div className="mt-12 grid grid-cols-1 lg:grid-cols-[34%_28%_38%] py-21.25 max-lg:py-15 rounded-xl bg-[url('/media/footer-image.jpg')] bg-cover bg-center bg-no-repeat">
+                        <div className="text-center px-11.25 lg:px-4 md:px-3 f-col">
                             <Image className="mx-auto mb-5" src="/media/location-icon.svg" alt="Location" width={20} height={20} />
                             <span className="font-bold text-[16px]">OUR LOCATION</span>
                             <p className="text-[#ffffff] mt-2.5">
@@ -97,7 +100,7 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        <div className="text-center px-11.25 border-l border-r border-[#FFFFFF8F]">
+                        <div className="text-center px-11.25 lg:px-4 md:px-3 border-l border-r border-[#FFFFFF8F] f-col">
                             <Image className="mx-auto mb-5" src="/media/call-icon.svg" alt="Location" width={24} height={24} />
                             <span className="font-bold text-[16px]">REACH OUT</span>
                             <p className="text-[#ffffff] mt-2.5">
@@ -136,7 +139,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        <div className="text-center px-11.25">
+                        <div className="text-center px-11.25 lg:px-4 md:px-3 f-col">
                             <Image className="mx-auto mb-5" src="/media/time-icon.svg" alt="Location" width={24} height={24} />
                             <span className="font-bold text-[16px]">Opening Hours</span>
                             <p className="text-[#ffffff] mt-2.5">
