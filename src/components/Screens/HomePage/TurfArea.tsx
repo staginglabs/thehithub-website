@@ -8,35 +8,35 @@ const cards = [
   {
     title: "Box Cricket",
     index: "01",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/media/cricket.png",
     color: "#FFF4CA",
   },
   {
     title: "Football",
     index: "02",
-    desc: "Lorem ipsum dolor sit amet.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/media/football.png",
     color: "#FFEA94",
   },
   {
     title: "Volleyball",
     index: "03",
-    desc: "Lorem ipsum dolor sit amet.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/media/volleyball.png",
     color: "#F6DB6D",
   },
   {
     title: "Badminton",
     index: "04",
-    desc: "Lorem ipsum dolor sit amet.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/media/badminton.png",
     color: "#C8D030",
   },
   {
     title: "Kabaddi",
     index: "05",
-    desc: "Lorem ipsum dolor sit amet.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image: "/media/kabaddi.png",
     color: "#9ACA3C",
   },
@@ -65,7 +65,7 @@ function TurfArea() {
 
         for (let s = 1; s <= steps; s++) {
           range.push((i + s) / cards.length)
-          widths.push(`calc(100% - ${s * 100}px)`)
+          widths.push(`calc(100% - ${s * 80}px)`)
         }
 
         const width = useTransform(
