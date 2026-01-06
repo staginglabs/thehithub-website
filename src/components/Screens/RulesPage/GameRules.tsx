@@ -1,4 +1,4 @@
-import { BookingPolicy, PaymentConfirmation } from "./rulesItem.js";
+import { BookingPolicy, CancellationRescheduling, EquipmentResponsibility, ManagementRights, PaymentConfirmation, PhotographyMedia, PlayingRules, SafetyInjury, TeamLimits, TurfGuidelines, WeatherForce } from "./rulesItem";
 const GameRules = () => {
   return (
     <>
@@ -30,7 +30,7 @@ const GameRules = () => {
         <div className="rules-list pb-12.5 mb-12.5 border-b-1 border-[#00000014]">
           <h2 className="mb-5">Cancellation & Rescheduling</h2>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {CancellationRescheduling.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
@@ -41,7 +41,7 @@ const GameRules = () => {
         <div className="rules-list pb-12.5 mb-12.5 border-b-1 border-[#00000014]">
           <h2 className="mb-5">Playing Rules & Conduct</h2>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {PlayingRules.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
@@ -52,7 +52,7 @@ const GameRules = () => {
         <div className="rules-list pb-12.5 mb-12.5 border-b-1 border-[#00000014]">
           <h2 className="mb-5">Turf Usage Guidelines</h2>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {TurfGuidelines.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
@@ -63,7 +63,7 @@ const GameRules = () => {
         <div className="rules-list pb-12.5 mb-12.5 border-b-1 border-[#00000014]">
           <h2 className="mb-5">Equipment Responsibility</h2>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {EquipmentResponsibility.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
@@ -74,7 +74,7 @@ const GameRules = () => {
         <div className="rules-list pb-12.5 mb-12.5 border-b-1 border-[#00000014]">
           <h2 className="mb-5">Safety & Injury Disclaimer</h2>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {SafetyInjury.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
@@ -85,7 +85,7 @@ const GameRules = () => {
         <div className="rules-list pb-12.5 mb-12.5 border-b-1 border-[#00000014]">
           <h2 className="mb-5">Capacity & Team Limits</h2>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {TeamLimits.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
@@ -96,7 +96,7 @@ const GameRules = () => {
         <div className="rules-list pb-12.5 mb-12.5 border-b-1 border-[#00000014]">
           <h2 className="mb-5">Weather & Force Majeure</h2>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {WeatherForce.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
@@ -107,7 +107,7 @@ const GameRules = () => {
         <div className="rules-list pb-12.5 mb-12.5 border-b-1 border-[#00000014]">
           <h2 className="mb-5">Photography & Media</h2>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {PhotographyMedia.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
@@ -116,9 +116,10 @@ const GameRules = () => {
         </div>
         {/* Management Rights */}
         <div className="rules-list mb-12.5">
-          <h2 className="mb-5">Management Rights</h2>
+          <h2 className="mb-3">Management Rights</h2>
+          <h3 className="mb-5 font-medium">Management reserves the right to:</h3>
           <ul className="list-disc ml-10">
-            {PaymentConfirmation.map((item, index) => (
+            {ManagementRights.map((item, index) => (
               <li key={index} className="leading-10 max-md:leading-8">
                 {item.text}
               </li>
