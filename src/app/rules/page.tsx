@@ -28,7 +28,7 @@ export default function Rules() {
         before:bg-[url('/media/rules-bottom.svg')]
         before:bg-repeat-x
         before:bg-bottom">
-        <div className="mx-auto flex w-full max-w-292.5 flex-col  border-2 border-[#FFFFFF] bg-[#FFFFFF66] p-20 max-md:px-5 rounded-[20px] -mt-108.75 relative z-10">
+        <div className="mx-auto flex w-full max-w-292.5 flex-col  border-2 border-[#FFFFFF] bg-[#FFFFFF66] p-20 max-md:px-5 max-md:py-10 rounded-[20px] -mt-108.75 relative z-10">
           <GameRules />
         </div>
       </section>
