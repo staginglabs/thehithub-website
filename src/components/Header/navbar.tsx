@@ -69,7 +69,7 @@ export function Navbar() {
 
           {/* Links */}
           <div className="hidden w-[60%] justify-center lg:flex">
-            <ul className="flex gap-8 text-sm text-[16px]">
+            <ul className="flex gap-6 lg:gap-6 xl:gap-8 text-base">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
