@@ -3,11 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation,Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import { secondary_button } from "@/fonts/fonts";
+import { motion } from "motion/react";
 
 const galleryImages: string[] = [
   "/media/gallery_image1.jpg",
@@ -24,20 +25,44 @@ const HitHubGallery: React.FC = () => {
 
         {/* Header */}
         <div className="grid lg:grid-cols-2 gap-6 mb-10">
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#0F351D]">
+          <motion.h2
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ amount: 0.4 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+              The Hit Hub Gallery
+          </motion.h2>
+
+          <motion.p
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ amount: 0.4 }}
+              transition={{ delay: 0.25, duration: 0.6, ease: "easeOut" }}
+              className="max-w-xl"
+          >
+              Premium turf, brilliant lighting, and a safe, match-ready surface.
+          </motion.p>
+          
+          {/* <h2 className="text-3xl lg:text-4xl font-bold text-[#0F351D]">
             The Hit Hub Gallery
           </h2>
           <p className="max-w-xl">
             Premium turf, brilliant lighting, and a safe, match-ready surface.
-          </p>
+          </p> */}
         </div>
 
         {/* Slider */}
         <Swiper
-            modules={[Navigation]}
+            modules={[Navigation,Autoplay]}
             spaceBetween={24}
             slidesPerView={1}
             loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
             navigation={{
                 prevEl: ".gallery-prev",
                 nextEl: ".gallery-next",
@@ -63,7 +88,8 @@ const HitHubGallery: React.FC = () => {
                 <Image
                   src={src}
                   alt={`Gallery image ${index + 1}`}
-                  fill
+                  fill 
+                  sizes="(max-width: 767px) 100vw,(max-width: 1023px) 50vw, 33vw"
                   className="object-cover"
                 />
               </div>

@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing - Create Next App",
-  description: "Pricing page of the application",
+  title: "Turf Booking Prices in Shajapur | Affordable Turf Near Indore",
+  description: "Check affordable turf booking prices in Shajapur at The Hit Hub. Best rates for football, cricket & box cricket. Trusted by players from Indore.",
 };
 
 

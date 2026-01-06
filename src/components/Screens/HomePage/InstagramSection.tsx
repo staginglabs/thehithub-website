@@ -36,8 +36,8 @@ const InstagramSection = () => {
             <Image
               src="/media/p-btn-arrow.svg"
               alt="contact"
-              width={21}
-              height={21}
+              width={31}
+              height={31}
             />
           </Link>
 

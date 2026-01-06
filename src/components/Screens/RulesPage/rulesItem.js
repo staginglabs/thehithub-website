@@ -6,6 +6,9 @@ export const BookingPolicy = [
 {text:"If players arrive 15 minutes late, the slot may be cancelled without refund."},
 ]
 
-
-
-
+export const PaymentConfirmation = [
+{text:"Full payment is mandatory to confirm a booking."},
+{text:"Bookings without payment confirmation are not guaranteed."},
+{text:"Advance payments are non-refundable, except in rare cases approved by management."},
+{text:"Any remaining balance must be cleared before play starts."},
+]

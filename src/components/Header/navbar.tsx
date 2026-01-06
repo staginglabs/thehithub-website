@@ -113,7 +113,7 @@ export function Navbar() {
       {/* Overlay */}
       <div
         onClick={() => setOpen(false)}
-        className={`fixed inset-0 z-99 bg-black/70 transition-opacity ${
+        className={`fixed inset-0 z-99 bg-black/70 transition-opacity menu-overlay ${
           open ? "opacity-100 block" : "opacity-0 hidden"
         }`}
       />
@@ -125,19 +125,29 @@ export function Navbar() {
         }`}
       >
         <div className="flex items-center justify-between border-b p-6 pb-10 border-[#0000001A]">
-          <span className="font-semibold">Menu</span>
+          <span>
+            <Link href="/">
+              <Image
+                src="/media/logo.svg"
+                alt="The Hit Hub"
+                width={60}  
+                height={60}
+                priority
+              />
+            </Link>
+          </span>
           <button onClick={() => setOpen(false)}>
             <CloseIcon />
           </button>
         </div>
 
-        <ul className="flex flex-col gap-4 p-6 py-10 text-sm font-medium">
+        <ul className="flex flex-col gap-2 py-10 text-sm font-medium">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className={pathname === link.href ? "text-[#18A34B]" : "text-[#000000]"}
+                className={pathname === link.href ? "bg-[#18A34B] text-[#ffffff] px-6 py-2 w-full block" : "text-[#000000] hover:bg-[#18A34B] hover:text-[#ffffff] px-6 py-2 w-full block"}
               >
                 {link.name}
               </Link>
@@ -145,21 +155,49 @@ export function Navbar() {
           ))}
         </ul>
 
-        <div className="border-t border-[#0000001A] p-6 py-10">
+        <div className="px-6">
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className={`inline-flex ${primary_button}`}
+            className={`inline-flex w-full justify-between! h-10! ${primary_button}`}
           >
             Contact Us
             <Image
               src="/media/p-btn-arrow.svg"
               alt="contact"
-              width={25}
-              height={25}
+              width={21}
+              height={21}
             />
           </Link>
+
+          {/* SOCIAL MEDIA ICONS */}
+          <div className="mt-8 flex items-center justify-between gap-3">
+              <a href="#" aria-label="Facebook" className="social-icon w-7.5 h-7.5 p-2 bg-[#18A34B] flex justify-center align-middle rounded-full">
+                  <Image src="/media/icons/facebook.svg" alt="Facebook" width={16} height={16} />
+              </a>
+
+              <a href="#" aria-label="Instagram" className="social-icon w-7.5 h-7.5 p-2 bg-[#18A34B] flex justify-center align-middle rounded-full">
+                  <Image src="/media/icons/instagram-icon.svg" alt="Instagram" width={16} height={16} />
+              </a>
+
+              <a href="#" aria-label="YouTube" className="social-icon w-7.5 h-7.5 p-2 bg-[#18A34B] flex justify-center align-middle rounded-full">
+                  <Image src="/media/icons/youtube.svg" alt="YouTube" width={16} height={16} />
+              </a>
+
+              <a href="#" aria-label="Snapchat" className="social-icon w-7.5 h-7.5 p-2 bg-[#18A34B] flex justify-center align-middle rounded-full">
+                  <Image src="/media/icons/snapchat.svg" alt="Snapchat" width={16} height={16} />
+              </a>
+
+              <a href="#" aria-label="LinkedIn" className="social-icon w-7.5 h-7.5 p-2 bg-[#18A34B] flex justify-center align-middle rounded-full">
+                  <Image src="/media/icons/linkedin.svg" alt="LinkedIn" width={16} height={16} />
+              </a>
+
+              <a href="#" aria-label="X" className="social-icon w-7.5 h-7.5 p-2 bg-[#18A34B] flex justify-center align-middle rounded-full">
+                  <Image src="/media/icons/x.svg" alt="X" width={16} height={16} />
+              </a>
+          </div>
         </div>
+        
       </aside>
     </>
   );

@@ -1,21 +1,20 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About The Hit Hub | Sports Turf in Shajapur Near Indore",
-  description: "The Hit Hub is a leading sports turf based in Shajapur, welcoming players from Indore & nearby areas. Learn about our vision & facilities.",
+  title: "Book Sports Turf in Shajapur | Football & Cricket Turf Near Indore",
+  description: "Book your sports turf in Shajapur at The Hit Hub. Easy online booking for football, cricket & box cricket. Preferred turf for Indore players nearby.",
 };
 
 
-export default function About() {
+export default function Sport() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <h1 className="text-4xl font-bold text-black dark:text-zinc-50">
-          About Page
+          Book Sports Turf in Shajapur | Football & Cricket Turf Near Indore
         </h1>
         <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          This is the about page of the application. Here you can find more
-          information about the app and its purpose.
+         Book your sports turf in Shajapur at The Hit Hub. Easy online booking for football, cricket & box cricket. Preferred turf for Indore players nearby.
         </p>
       </main>
     </div>

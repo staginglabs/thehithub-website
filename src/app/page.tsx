@@ -1,9 +1,15 @@
-import Banner from "@/components/Screens/HomePage/banner";
+import Banner from "@/components/Screens/HomePage/Banner";
 import HitHubGallery from "@/components/Screens/HomePage/HitHubGallery";
 import HomeWelcomeSection from "@/components/Screens/HomePage/HomeWelcomeSection";
 import InstagramSection from "@/components/Screens/HomePage/InstagramSection";
 import PlayersPrefer from "@/components/Screens/HomePage/PlayersPrefer";
 import TurfArea from "@/components/Screens/HomePage/TurfArea";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sports Turf in Shajapur & Near Indore | The Hit Hub Turf Arena",
+  description: "The Hit Hub offers premium sports turf in Shajapur and near Indore. Book football, cricket & box cricket turf with top facilities. Reserve now!",
+};
 
 export default function Home() {
   return (

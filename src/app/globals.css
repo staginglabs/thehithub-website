@@ -12,33 +12,30 @@
   --font-mono: var(--font-geist-mono);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #0F351D;
-  }
-} */
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 @layer base {
-  h1 {
-    @apply w-full sm:max-w-179.75 text-[50px] md:text-[60px] lg:text-[95px] leading-[60px] sm:leading-25 text-[#0F351D] text-center font-bold;
+  h1 { @apply w-full text-[50px] leading-[60px] md:text-[60px] md:leading-[70px] lg:text-[95px] lg:leading-[100px] text-[#0F351D] text-center font-bold;
   }
 
-  h2 { 
+  h2 {
     @apply text-[40px] max-md:text-[35px] max-md:leading-12 leading-13.75 font-bold;
   }
 }
 
-.prefer-section::before{
-  content:"";
+::marker {
+  font-size: 16px;
+}
+.menu-overlay{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.prefer-section::before {
+  content: "";
   position: absolute;
   width: 700px;
   height: 100%;
@@ -50,52 +47,22 @@ body {
   z-index: 0;
 }
 
-@media (max-width: 1024px) {
- .prefer-section::before{
-  width: 100%;
-  left: 0;
-  height: 200px;
-  top: 50%;
-  background: url(/media/hit-bg-mobile.svg) no-repeat center;
-}
-
-  .home-welcome .welcome-heading {
-    font-size: 24px;
+@media (max-width: 1023px) {
+  .prefer-section::before {
+    width: 100%;
+    left: 0;
+    height: 200px;
+    top: 50%;
+    background: url(/media/hit-bg-mobile.svg) no-repeat center;
   }
-  .f-col{
+
+  .f-col {
     padding: 30px 0;
-    border: 0;
-  }
-}
-
-@media (max-width: 820.98px) {
-  .banner-list ul li:last-child {
-    margin-top: 0 !important;
   }
 }
 
 @media (max-width: 767px) {
   .prefer-section:before {
-      background-size: contain;
-    }
-}
-
-@media (max-width: 425.98px) {
-  .banner-image {
-    margin-top: -120px;
-  }
-
-  .banner-text {
-    margin-top: 140px;
-  }
-}
-
-@media (max-width: 367.98px) {
-  .banner-image {
-    margin-top: -165px;
-  }
-
-  .banner-text {
-    margin-top: 120px;
+    background-size: contain;
   }
 }
