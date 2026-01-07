@@ -1,3 +1,4 @@
+import InstagramFeed from "@/components/InstagramFeed";
 import Banner from "@/components/Screens/HomePage/banner";
 import Cards from "@/components/Screens/HomePage/Cards";
 import HomeWelcomeSection from "@/components/Screens/HomePage/HomeWelcomeSection";
@@ -21,7 +22,8 @@ export default function Home() {
         <section className="w-full bg-linear-to-b from-[#F9EBDA] to-[#FFFFFF]">
           <div className="mx-auto px-3.75 flex w-full max-w-292.5 flex-col">
             <HomeWelcomeSection />
-            <InstagramSection />
+            {/* <InstagramSection /> */}
+            <InstagramFeed />
           </div>
         </section>
 
