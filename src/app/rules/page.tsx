@@ -2,8 +2,8 @@ import Rulebanner from "@/components/Screens/RulesPage/Rulebanner";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Rules - Create Next App",
-  description: "Rules page of the application",
+  title: "Sports Turf Rules in Shajapur | Guidelines for Players",
+  description: "View sports turf rules & regulations at The Hit Hub in Shajapur. Safe play guidelines for football & cricket turf, followed by Indore players too.",
 };
 
 export default function Rules() {

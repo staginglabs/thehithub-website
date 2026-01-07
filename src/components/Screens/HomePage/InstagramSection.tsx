@@ -22,7 +22,8 @@ const InstagramSection = () => {
       <div className="w-full mt-8.5">
         <div className="flex items-center justify-between w-full">
           <Image
-            src={"./media/icons/instagram.svg"}
+            style={{ height: 'auto' }}
+            src={"/media/icons/instagram.svg"}
             width={167}
             height={40}
             alt="instagram"
@@ -34,6 +35,7 @@ const InstagramSection = () => {
           >
             Read More
             <Image
+              style={{ height: 'auto' }}
               src="/media/p-btn-arrow.svg"
               alt="contact"
               width={21}
@@ -43,7 +45,8 @@ const InstagramSection = () => {
 
           <div className="flex gap-2">
             <Image
-              src={"./media/icons/arrow.svg"}
+              style={{ height: 'auto' }}
+              src={"/media/icons/arrow.svg"}
               width={50}
               height={50}
               alt="arrow"
@@ -51,7 +54,8 @@ const InstagramSection = () => {
             />
 
             <Image
-              src={"./media/icons/arrow.svg"}
+              style={{ height: 'auto' }}
+              src={"/media/icons/arrow.svg"}
               width={50}
               height={50}
               alt="arrow"

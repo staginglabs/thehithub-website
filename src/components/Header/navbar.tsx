@@ -1,10 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from 'react';
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { primary_button } from "@/fonts/fonts";
+import { CTAButton } from '../CTA';
+import { MenuLink } from '../MenuLink';
+
 
 /* SVG Icons */
 const MenuIcon = () => (
@@ -34,21 +37,40 @@ const navLinks = [
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
       {/* Navbar */}
-      <nav className="w-full px-3.75 py-1.25 fixed">
-        <div className="mx-auto flex max-w-347.5 items-center">
+      <nav
+      className={`px-3.75 py-1.25 fixed top-0 w-full z-50 transition-all duration-300 ease-in-out ${
+        isScrolled ? 'bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-sm' : 'bg-transparent'
+      }`}
+      >
+        <div 
+        className={`mx-auto flex max-w-347.5 justify-between items-center transition-transform duration-300 ease-in-out ${
+          isScrolled ? 'scale-80' : 'scale-100'
+        }`}
+        >
           {/* Logo*/}
           <div className="w-[20%]">
-            <Link href="/">
+            <Link href="/" className="w-25">
               <Image
                 src="/media/logo.svg"
                 alt="The Hit Hub"
                 width={100}
                 height={90}
-                priority
+                className='transition-all'
+                style={{ width: 'auto', height: '90px' }}
               />
             </Link>
           </div>
@@ -57,36 +79,14 @@ export function Navbar() {
           <div className="hidden w-[60%] justify-center lg:flex">
             <ul className="flex gap-8 text-sm text-[16px]">
               {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={`transition ${
-                      pathname === link.href
-                        ? "text-[#18A34B]"
-                        : "text-[#000000] hover:text-[#18A34B]"
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                </li>
+                <MenuLink href={link.href} key={link.href}>{link.name}</MenuLink>
               ))}
             </ul>
           </div>
 
           {/* Contact Botton */}
           <div className="flex w-[80%] items-center justify-end gap-3 lg:w-[20%]">
-            <Link
-              href="/contact"
-              className={`hidden lg:flex ${primary_button} py-2.5! h-11! pl-4! pr-4!`}
-            >
-              Contact Us
-              <Image
-                src="/media/p-btn-arrow.svg"
-                alt="contact"
-                width={21}
-                height={21}
-              />
-            </Link>
+            <CTAButton label='Contact Us' href='/contact' className={`${primary_button} py-2.5! h-11! pl-4! pr-4!`} />
 
             {/* Toggle */}
             <button onClick={() => setOpen(true)} className="lg:hidden">
@@ -147,6 +147,7 @@ export function Navbar() {
                 alt="contact"
                 width={21}
                 height={21}
+                style={{ height: 'auto' }}
               />
           </Link>
         </div>

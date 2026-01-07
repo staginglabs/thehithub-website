@@ -10,8 +10,7 @@ export default function Home() {
       <div className="flex flex-col w-full dark:bg-black">
         {/* banner section */}
         <section
-          className="w-full 
-    bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat"
+          className="w-full bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat"
         >
           <div className="mx-auto flex flex-col w-full max-w-292.5 pt-32 px-3.75">
             <Banner />
@@ -27,7 +26,7 @@ export default function Home() {
         </section>
 
         <section className="w-full bg-[#ffffff] py-30">
-          <div className="mx-auto px-3.75 flex w-full max-w-320 flex-col">
+          <div className="mx-auto px-3.75 flex w-full max-w-7xl flex-col relative">
             <TurfArea />
           </div>
         </section>

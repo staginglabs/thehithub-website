@@ -40,6 +40,7 @@ const HomeWelcomeSection = () => {
                 alt="contact"
                 width={21}
                 height={21}
+                style={{ height: 'auto' }}
               />
             </Link>
           </div>

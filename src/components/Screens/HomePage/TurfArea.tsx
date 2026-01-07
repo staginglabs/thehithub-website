@@ -85,7 +85,7 @@ function TurfArea() {
                 background: card.color,
                 top: topOffset,
                 width,
-                zIndex: cards.length - i,
+                zIndex: cards.length + i,
               }}
             >
               <div className="card-header">

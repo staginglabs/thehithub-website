@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About - Create Next App",
-  description: "About page of the application",
+  title: "About The Hit Hub | Sports Turf in Shajapur Near Indore",
+  description: "The Hit Hub is a leading sports turf based in Shajapur, welcoming players from Indore & nearby areas. Learn about our vision & facilities.",
 };
 
 

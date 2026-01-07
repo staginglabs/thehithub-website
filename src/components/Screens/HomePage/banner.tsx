@@ -1,3 +1,4 @@
+import { CTAButton } from "@/components/CTA";
 import { banner_list_text, secondary_button } from "@/fonts/fonts";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,18 +45,7 @@ const Banner = () => {
             A premium turf space designed for high-energy play and unforgettable
             moments.
           </p>
-          <Link
-            href="/"
-            className={`${secondary_button} w-max mt-6.25 lg:mt-10`}
-          >
-            Contact Us
-            <Image
-              src="/media/p-btn-arrow.svg"
-              alt="contact"
-              width={21}
-              height={21}
-            />
-          </Link>
+          <CTAButton label='Contact Us' href='/contact' className={`${secondary_button} w-max mt-6.25 lg:mt-10`} />
         </div>
 
         {/* Center Image */}
@@ -65,6 +55,7 @@ const Banner = () => {
             alt="Players"
             width={975}
             height={600}
+            style={{ height: 'auto' }}
             className="object-contain md:max-w-175 lg:max-w-200 h-143.25"
             priority
           />
@@ -81,6 +72,7 @@ const Banner = () => {
                     width={30}
                     height={30}
                     alt="box-cricket"
+                    style={{ height: 'auto' }}
                     className={item.listClass}
                   />
                   {item.text}
