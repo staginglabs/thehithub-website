@@ -5,7 +5,6 @@ export const galleryData = [
   { id: 3, category: 'Box Cricket', src: '/media/gallery/gallery-3.jpg' },
 
   // Football
-  { id: 4, category: 'Football', src: '/media/gallery/gallery-1.jpg' },
   { id: 5, category: 'Football', src: '/media/gallery/gallery-2.jpg' },
   { id: 6, category: 'Football', src: '/media/gallery/gallery-3.jpg' },
 

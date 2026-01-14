@@ -16,7 +16,7 @@ const Footer = () => {
                 <section
                     className="relative px-3.5 pt-50 pb-82.5 max-lg:pt-25 max-lg:pb-40 bg-[url('/media/ready-to-play.jpg')] bg-cover bg-top bg-no-repeat before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-60 before:max-lg:h-25 before:bg-[url('/media/ready-to-play-buttom.svg')] before:bg-no-repeat before:bg-bottom before:bg-cover"
                 >
-                    <div className="relative z-10 max-w-7xl mx-auto text-center">
+                    <div className="relative max-w-7xl mx-auto text-center">
                         <motion.h2
                             initial={{ opacity: 0, y: 25 }}
                             whileInView={{ opacity: 1, y: 0 }}

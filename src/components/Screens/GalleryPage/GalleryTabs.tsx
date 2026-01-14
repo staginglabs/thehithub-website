@@ -30,7 +30,7 @@ export default function GalleryTabs() {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-5 py-2 rounded-full text-sm font-semibold transition
+            className={`px-5 py-2 rounded-full text-sm font-bold transition
               ${
                 activeTab === tab
                   ? "bg-[#98C83C] text-[#ffffff] text-[16px] font-bold border border-[#98C83C] py-2.75 rounded-[40px] cursor-pointer"

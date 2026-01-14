@@ -46,7 +46,14 @@ body {
   background: url(/media/hit-bg.svg) no-repeat center;
   z-index: 0;
 }
+.play-wrapper .content-col,
+.play-wrapper .image-col {
+  width: 50%;
+}
 
+.play-wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
 @media (max-width: 1023px) {
   .prefer-section::before {
     width: 100%;

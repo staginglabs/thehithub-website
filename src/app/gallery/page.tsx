@@ -1,5 +1,6 @@
 import GalleryBanner from "@/components/Screens/GalleryPage/GalleryBanner";
 import GalleryTabs from "@/components/Screens/GalleryPage/GalleryTabs";
+import RealPeople from "@/components/Screens/GalleryPage/RealPeople";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -17,10 +18,18 @@ export default function Gallery() {
           <GalleryBanner />
         </div>
       </section>
-      {/* Other sections  */}
+
+      {/* Tabs sections  */}
       <section className="w-full bg-[url('/media/rules-top.svg')] bg-top bg-repeat-x px-3.75 relative z-10">
         <div className="mx-auto flex w-full max-w-292.5 flex-col -mt-108.75">
           <GalleryTabs />
+        </div>
+      </section>
+
+        {/* Real People Section */}
+      <section className="w-full bg-[#F9EBDAB2] px-3.75 pt-30 relative z-1">
+        <div className="mx-auto flex w-full max-w-292.5 flex-col -mb-10">
+          <RealPeople />
         </div>
       </section>
     </div>
