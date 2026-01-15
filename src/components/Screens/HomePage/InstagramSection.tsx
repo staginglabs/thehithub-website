@@ -20,7 +20,7 @@ const InstagramSection = () => {
       </div>
 
       <div className="w-full mt-8.5">
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full max-md:flex-col max-md:gap-6">
           <Image
             style={{ height: 'auto' }}
             src={"/media/icons/instagram.svg"}
@@ -38,8 +38,8 @@ const InstagramSection = () => {
               style={{ height: 'auto' }}
               src="/media/p-btn-arrow.svg"
               alt="contact"
-              width={21}
-              height={21}
+              width={31}
+              height={31}
             />
           </Link>
 

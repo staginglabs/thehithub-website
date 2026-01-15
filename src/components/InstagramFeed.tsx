@@ -4,7 +4,6 @@ export default function InstagramFeed() {
     <div className="w-full overflow-hidden rounded-xl">
       <iframe
         src="//lightwidget.com/widgets/451a99990e515b9c9412540607daff92.html"
-        allowTransparency={true}
         style={{ border: "0", height: "1100px" }}
         className="w-full h-112.5 border-0"
         />

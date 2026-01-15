@@ -8,7 +8,8 @@ export const poppins = Poppins({
 });
 
 //body style
-export const bodyStyle = 'text-2xl leading-9 text-[#0F351D] antialiased';
+export const bodyStyle =
+  'text-[18px] leading-7 lg:text-[20px] lg:leading-7 xl:text-2xl xl:leading-9';
 
 //buttons
 export const primary_button = 'flex items-center justify-center rounded-full bg-[#18A34B] text-white py-3.5 pl-6.5 pr-2.5 h-[50px] text-base leading-[1em] font-medium hover:bg-green-700 hover:text-white gap-2.5';
@@ -22,4 +23,3 @@ export const banner_list_text = 'text-base leading-7.5 font-medium flex items-ce
 //list text (li)
 
 export const list_text = 'text-base leading-7.5 font-medium'
-

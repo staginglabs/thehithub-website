@@ -35,7 +35,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`  ${poppins.className} ${bodyStyle}`}>
+      <body className={`${poppins.className} ${bodyStyle}`}>
         <Navbar />
         {children}
         <Footer />
@@ -43,5 +43,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-//  ${bodyStyle}
