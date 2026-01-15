@@ -1,0 +1,6 @@
+<svg viewBox="0 0 120 200" xmlns="http://www.w3.org/2000/svg">
+  <path
+    fill="currentColor"
+    d="M60 10c10 0 18 8 18 18s-8 18-18 18-18-8-18-18S50 10 60 10zm-8 40h16l10 40-12 8-6-24-6 24-12-8 10-40zm-20 120h16v-50l-16-10v60zm40 0h16v-60l-16 10v50z"
+  />
+</svg>
