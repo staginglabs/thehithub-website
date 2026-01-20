@@ -1,6 +1,7 @@
 import GalleryBanner from "@/components/Screens/GalleryPage/GalleryBanner";
 import GalleryTabs from "@/components/Screens/GalleryPage/GalleryTabs";
 import RealPeople from "@/components/Screens/GalleryPage/RealPeople";
+import InstagramSection from "@/components/Screens/HomePage/InstagramSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +14,7 @@ export default function Gallery() {
   return (
     <div className="flex flex-col w-full">
       {/* banner section */}
-      <section className="w-full  bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat pt-36 px-3.75 pb-127.5">
+      <section className="w-full bg-[url('/media/banner-bg.jpg')] bg-cover bg-center bg-no-repeat pt-36 px-3.75 pb-127.5">
         <div className="mx-auto flex flex-col w-full max-w-292.5">
           <GalleryBanner />
         </div>
@@ -27,8 +28,11 @@ export default function Gallery() {
       </section>
 
       {/* Real People Section */}
-      <section className="w-full bg-[#F9EBDAB2] px-3.75 pt-30 relative z-1">
-        <div className="mx-auto flex w-full max-w-292.5 flex-col -mb-10">
+      <section className="w-full bg-[url('/media/real-bg.png')] bg-cover bg-center bg-no-repeat px-3.75 pt-30 relative z-1">
+        <div className="mx-auto flex w-full max-w-292.5 flex-col mb-26">
+          <InstagramSection />
+        </div>
+        <div className="mx-auto flex w-full max-w-292.5 flex-col lg:-mb-26 md:mb-0 mb-0">
           <RealPeople />
         </div>
       </section>

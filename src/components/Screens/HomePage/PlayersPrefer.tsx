@@ -19,7 +19,7 @@ const PlayersPrefer = () => {
   return (
     <div className="flex relative z-1 flex-wrap">
       {/* Heading List */}
-      <div className="w-full xl:w-[35%] lg:w-[30%] text-center lg:text-left pt-25 max-md:pt-20">
+      <div className="w-full xl:w-[35%] lg:w-[30%] text-center lg:text-left lg:pt-25 md:pt-0 pt-0 ">
       <motion.h2
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -21,17 +21,20 @@ const InstagramSection = () => {
 
       <div className="w-full mt-8.5">
         <div className="flex items-center justify-between w-full max-md:flex-col max-md:gap-6">
+         <Link href="https://www.instagram.com/thehithubofficial/" target="_blank">
           <Image
-            style={{ height: 'auto' }}
-            src={"/media/icons/instagram.svg"}
+            src="/media/icons/instagram.svg"
             width={167}
             height={40}
             alt="instagram"
+            style={{ height: "auto" }}
           />
+        </Link>
 
           <Link
-            href="/"
-            className={`${primary_button}  w-max  mx-auto md:mx-0`}
+            href="https://www.instagram.com/thehithubofficial/"
+            target="_blank"
+            className={`${primary_button} w-max mx-auto md:mx-0`}
           >
             Read More
             <Image
@@ -42,28 +45,16 @@ const InstagramSection = () => {
               height={31}
             />
           </Link>
-
-          <div className="flex gap-2">
-            <Image
-              style={{ height: 'auto' }}
-              src={"/media/icons/arrow.svg"}
-              width={50}
-              height={50}
-              alt="arrow"
-              className=" size-12.5 border border-[#0F351D] rounded-full p-5 hover:bg-[#F8E108] hover:border-0"
-            />
-
-            <Image
-              style={{ height: 'auto' }}
-              src={"/media/icons/arrow.svg"}
-              width={50}
-              height={50}
-              alt="arrow"
-              className=" size-12.5 border border-[#0F351D] rounded-full p-5 rotate-180 hover:bg-[#F8E108] hover:border-0"
-            />
-          </div>
         </div>
       </div>
+
+       <div className="w-full overflow-hidden -mb-10">
+      <iframe
+        src="//lightwidget.com/widgets/451a99990e515b9c9412540607daff92.html"
+        style={{ border: "0", height: "1100px" }}
+        className="w-full h-112.5 border-0"
+        />
+    </div>
     </>
   );
 };

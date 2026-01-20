@@ -56,6 +56,7 @@ const SportsPlay = () => {
                             <Image
                                 src={sport.image}
                                 alt={sport.title}
+                                style={{ objectFit: "contain" }}
                                 fill
                             />
                         </div>

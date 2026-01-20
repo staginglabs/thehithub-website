@@ -2,6 +2,7 @@ import InstagramFeed from "@/components/InstagramFeed";
 import Banner from "@/components/Screens/HomePage/Banner";
 import HitHubGallery from "@/components/Screens/HomePage/HitHubGallery";
 import HomeWelcomeSection from "@/components/Screens/HomePage/HomeWelcomeSection";
+import InstagramSection from "@/components/Screens/HomePage/InstagramSection";
 import PlayersPrefer from "@/components/Screens/HomePage/PlayersPrefer";
 import TurfArea from "@/components/Screens/HomePage/TurfArea";
 import { Metadata } from "next";
@@ -26,8 +27,8 @@ export default function Home() {
         <section className="w-full bg-linear-to-b from-[#F9EBDA] to-[#FFFFFF] px-3.75">
           <div className="mx-auto flex w-full max-w-292.5 flex-col">
             <HomeWelcomeSection />
-            {/* <InstagramSection /> */}
-            <InstagramFeed />
+            <InstagramSection />
+            {/* <InstagramFeed /> */}
           </div>
         </section>
          {/* Turf Area section */}
