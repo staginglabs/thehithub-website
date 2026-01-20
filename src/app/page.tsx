@@ -43,8 +43,8 @@ export default function Home() {
           </div>
         </section>
         {/* HitHub Gallery section */}
-        <section className="w-full px-3.75 py-30 max-md:py-20 relative bg-linear-to-b from-[#f9ebda8a] to-[#FFFFFF]">
-          <div className="mx-auto flex w-full max-w-292.5 flex-col">
+        <section className="w-full px-3.75 pt-30 max-md:pt-20 relative bg-linear-to-b from-[#f9ebda8a] to-[#FFFFFF]">
+          <div className="mx-auto flex w-full max-w-292.5 flex-col lg:-mb-42 md:-mb-25 -mb-25">
             <HitHubGallery />
           </div>
         </section>
